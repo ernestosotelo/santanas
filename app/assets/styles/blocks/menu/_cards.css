@@ -1,0 +1,22 @@
+.menu__cards__category {
+  padding: 5rem;
+  display: flex;
+  grid-gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 10rem;
+  background-color: $mainGreen;
+  justify-content: center;
+  @mixin respond deviceSM {
+    margin-top: 0;
+    justify-content: space-evenly;
+  }
+
+  &__header {
+    text-shadow: 1px 2px $mainLight;
+    width: 100%;
+    color: $mainOrange;
+    font-size: 7rem;
+    align-self: center;
+    padding: 4rem;
+  }
+}

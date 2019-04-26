@@ -1,0 +1,16 @@
+.about__info {
+  z-index: 2;
+  width: 100%;
+  grid-row: 1/2;
+  grid-column: 1/13;
+  background-color: rgba($veryDark, 0.7);
+  color: $mainLight;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 5rem;
+  padding: 1rem;
+  box-shadow: inset 0px -2px 12px 0px $veryDark;
+  @mixin respond deviceMD {
+    margin-top: 9rem;
+  }
+}

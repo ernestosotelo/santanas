@@ -1,0 +1,11 @@
+.about__drive-thru__cars {
+  grid-row: 2/3;
+  z-index: 5;
+  justify-self: center;
+  margin-right: 25%;
+  width: 65%;
+  @mixin respond deviceSM {
+    width: 50%;
+    margin-right: 15%;
+  }
+}

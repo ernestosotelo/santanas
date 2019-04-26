@@ -1,0 +1,72 @@
+.nav__link {
+  font-size: 3rem;
+  text-align: center;
+  padding: 1rem;
+  @mixin respond deviceMD {
+    display: none;
+  }
+  &:hover {
+    color: $mainOrange;
+  }
+}
+
+.nav__sublink {
+  display: none;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  top: 5.2rem;
+  justify-content: space-evenly;
+  &__item {
+    margin: 0;
+    width: 100%;
+    border: solid 0.1rem $mainOrange;
+    font-size: 1.4rem;
+    text-decoration: none;
+    padding: 1rem;
+    background-color: $lightOrange;
+    color: $mainDark;
+    text-align: center;
+
+    &:hover {
+      background-color: color($mainGreen lightness(50%));
+    }
+  }
+  @mixin respond deviceMD {
+    display: none;
+  }
+}
+
+.nav__link__mobile {
+  @mixin respond deviceMD {
+    background-color: rgba($mainDark, 0.9);
+    color: $mainLight;
+    text-decoration: none;
+    display: block;
+    &:hover {
+      color: $mainOrange;
+    }
+  }
+}
+
+.nav__sublink__mobile {
+  @mixin respond deviceMD {
+    list-style: none;
+    margin-right: 4rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  &__item {
+    @mixin respond deviceMD {
+      display: block;
+      padding: 1rem;
+      width: 20%;
+      margin: 0 auto;
+      color: $mainGreen;
+
+      font-size: 2.2rem;
+      text-decoration: none;
+    }
+  }
+}

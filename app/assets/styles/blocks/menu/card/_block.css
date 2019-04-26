@@ -1,0 +1,8 @@
+.menu__card {
+  width: 32rem;
+  background-color: color($mainLight lightness(5%));
+  border: 0.4rem solid $mainGreen;
+  padding: 3rem;
+  border-radius: 1rem;
+  margin: 1rem;
+}
