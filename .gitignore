@@ -1,12 +1,1 @@
 /node_modules
-/.vscode
-/webpack.config.js
-/assets
-/images
-/gulp
-/minify
-/package
-/package-lock
-/index.html
-/index.css
-/index.js
