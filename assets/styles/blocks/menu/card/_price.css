@@ -1,5 +1,7 @@
 .menu__card__price {
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: 1.8rem;
   text-align: right;
+  @mixin respond deviceMD {
+    font-size: 3rem;
+  }
 }

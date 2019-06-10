@@ -1,16 +1,13 @@
 .contact__form {
-  margin: 5rem 0 0 0;
-  background-color: $mainOrange;
-  width: 100%;
+  background-color: color($mainRed lightness(30%));
   padding: 3rem 0 3rem 0;
   opacity: 0.9;
-
-  &:hover {
-    box-shadow: 2px 2px 5px $mainOrange;
-  }
+  width: 70rem;
+  border-radius: 2rem;
+  margin: 5rem auto;
+  border: 0.4rem solid color($mainRed lightness(10%));
 
   @mixin respond deviceSM {
     width: 100%;
-    margin-right: 15%;
   }
 }

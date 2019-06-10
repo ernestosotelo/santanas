@@ -13,7 +13,7 @@ export default class ScrollEvents {
   }
 
   revealItems() {
-    const offset = "80%"
+    const offset = "90%"
     const itemsToReveal = $(".menu__card")
     itemsToReveal.each(function() {
       let currentItem = this

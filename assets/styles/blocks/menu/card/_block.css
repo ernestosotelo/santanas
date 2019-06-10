@@ -1,8 +1,20 @@
 .menu__card {
-  width: 32rem;
-  background-color: color($mainLight lightness(5%));
-  border: 0.4rem solid $mainGreen;
+  width: 30rem;
+  background: linear-gradient(
+    rgb(255, 255, 238) 0%,
+    color($darkGreen lightness(95%)) 100%
+  );
+  color: color($darkGreen lightness(20%));
   padding: 3rem;
   border-radius: 1rem;
-  margin: 1rem;
+  margin: 5rem;
+  height: 40rem;
+  border: ridge 0.2rem color($darkGreen lightness(30%));
+  transform: skew(-3deg);
+
+  @mixin respond deviceSM {
+    width: 80%;
+    height: 100%;
+    transform: none;
+  }
 }

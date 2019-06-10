@@ -36,6 +36,7 @@
 /* Menu */
 @import "blocks/menu/_block.css";
 @import "blocks/menu/_headers.css";
+@import "blocks/menu/_btn.css";
 @import "blocks/menu/card/_block.css";
 @import "blocks/menu/_cards.css";
 @import "blocks/menu/card/_name.css";

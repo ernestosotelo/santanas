@@ -4,19 +4,23 @@
   font-family: $mainFont;
   font-weight: bold;
   font-size: 3rem;
-  background-color: rgba($mainDark, 0.5);
+  background-color: color($mainRed lightness(30%));
   border-radius: 0.5rem;
   padding: 1rem;
   width: 15rem;
   display: block;
   cursor: pointer;
   color: $mainLight;
-  border: 0.1rem solid $mainLight;
+  border: 0.1rem ouset $mainLight;
   box-shadow: 0px 0px 5px 0px #302d2d;
 
   &:hover {
-    transform: scale(1.1);
-    background-color: rgba($mainDark, 0.8);
+    transform: scale(1.05);
+    background-color: color($mainRed lightness(35%));
     transition: 0.2s ease-in;
+  }
+
+  &:active {
+    border-style: inset;
   }
 }

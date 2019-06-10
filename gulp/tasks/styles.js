@@ -13,7 +13,7 @@ var gulp = require("gulp"),
 
 gulp.task("styles", function() {
   return gulp
-    .src("./app/assets/styles/index.css")
+    .src("./assets/styles/index.css")
     .pipe(
       postcss([
         cssImport,
@@ -32,5 +32,5 @@ gulp.task("styles", function() {
       console.log(errorInfo.toString())
       this.emit("end")
     })
-    .pipe(gulp.dest("./app/public/"))
+    .pipe(gulp.dest("./"))
 })

@@ -1,13 +1,13 @@
 .reveal-item {
   opacity: 0;
   transform: scale(0.4);
-  color: $mainOrange;
+  color: $mainRed;
 
   &--visible {
     opacity: 1;
     color: $mainGreen;
     transform: scale(1);
-    transition: opacity 0.4s, transform 0.4s, color 2s;
+    transition: opacity 200ms, transform 200ms, color 2s;
   }
 }
 
@@ -17,7 +17,7 @@
 
   &--active {
     text-decoration: overline;
-    color: color($mainOrange lightness(50%));
+    color: color($mainGreen lightness(60%));
     transition: 0.3s linear;
   }
 }

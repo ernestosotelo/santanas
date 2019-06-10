@@ -7,15 +7,16 @@
     width: 15rem;
     justify-self: center;
     font-size: 2rem;
-    color: $veryDark;
+    color: $mainLight;
     text-decoration: none;
     padding: 1rem;
     font-weight: bold;
     border: 1px $mainDark solid;
-    background-color: $lightOrange;
+    background-color: color($mainRed lightness(30%));
     &:hover {
-      background-color: color($lightOrange lightness(50%));
-      transition: background-color 0.2s;
+      transform: scale(1.04);
+      background-color: color($mainRed lightness(35%));
+      transition: transform 200ms, background-color 200ms;
     }
     &:nth-child(2) {
       display: none;
