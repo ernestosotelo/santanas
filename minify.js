@@ -1,24 +1,25 @@
 const minify = require("@node-minify/core")
 const uglifyES = require("@node-minify/uglify-es")
 const htmlMinifier = require("@node-minify/html-minifier")
+const cssnano = require("@node-minify/cssnano")
 
 minify({
   compressor: cssnano,
-  input: "./app/public/index.css",
-  output: "index.min.css",
+  input: "./index.css",
+  output: "./public/index.css",
   callback: function(err, min) {}
 })
 
 minify({
   compressor: uglifyES,
-  input: "./app/public/index.js",
-  output: "index.min.js",
+  input: "./assets/scripts/index.js",
+  output: "./public/index.js",
   callback: function(err, min) {}
 })
 
 minify({
   compressor: htmlMinifier,
-  input: "./app/public/index.html",
-  output: "index.min.html",
+  input: "./index.html",
+  output: "./public/index.html",
   callback: function(err, min) {}
 })

@@ -1,7 +1,0 @@
-.nav__icon {
-  display: none;
-
-  @mixin respond deviceSM {
-    display: none;
-  }
-}
