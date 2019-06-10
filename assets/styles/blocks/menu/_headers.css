@@ -1,9 +1,0 @@
-.menu {
-  &__subheader {
-    font-size: 2rem;
-    text-align: center;
-    color: $darkGreen;
-    margin-top: -1rem;
-    margin-bottom: 5rem;
-  }
-}

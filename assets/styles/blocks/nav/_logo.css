@@ -1,8 +1,0 @@
-.nav__logo {
-  width: 15rem;
-  justify-self: center;
-
-  @mixin respond deviceSM {
-    display: none;
-  }
-}
