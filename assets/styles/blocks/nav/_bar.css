@@ -1,0 +1,33 @@
+.nav__bar {
+  display: none;
+  box-shadow: 0px 4px 5px #1b1815;
+
+  @mixin respond deviceMD {
+    background-color: $mainDark;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 2rem;
+    width: 100%;
+  }
+  &__icon,
+  &__icon-close {
+    display: none;
+    @mixin respond deviceMD {
+      display: block;
+      width: 5rem;
+      justify-self: end;
+      grid-row: 1/1;
+      grid-column: 2/3;
+    }
+  }
+
+  &__logo {
+    display: none;
+    @mixin respond deviceMD {
+      width: 15rem;
+      display: inline-block;
+      justify-self: start;
+    }
+  }
+}

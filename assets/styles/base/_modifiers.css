@@ -1,0 +1,46 @@
+.reveal-item {
+  opacity: 0;
+  transform: scale(0.4);
+  color: $mainOrange;
+
+  &--visible {
+    opacity: 1;
+    color: $mainGreen;
+    transform: scale(1);
+    transition: opacity 0.4s, transform 0.4s, color 2s;
+  }
+}
+
+.nav__link-indicator {
+  color: #c5ce0d;
+  text-decoration: none;
+
+  &--active {
+    text-decoration: overline;
+    color: color($mainOrange lightness(50%));
+    transition: 0.3s linear;
+  }
+}
+
+.--sticky {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  top: 0;
+}
+
+.fix-to-bottom {
+  position: fixed;
+  z-index: 3;
+  bottom: 0;
+  right: 0;
+}
+
+.nav-mobile--toggle {
+  display: none;
+}
+
+.hide {
+  opacity: 0;
+  transition: opacity 0.3s;
+}

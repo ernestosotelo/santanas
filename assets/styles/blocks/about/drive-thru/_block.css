@@ -1,0 +1,10 @@
+.about__drive-thru {
+  grid-row: 3/4;
+  display: grid;
+  grid-column: 1/13;
+  grid-template-rows: repeat(3, auto);
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 10rem;
+  z-index: 1;
+}

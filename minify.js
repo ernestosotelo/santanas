@@ -6,14 +6,14 @@ const cssnano = require("@node-minify/cssnano")
 minify({
   compressor: cssnano,
   input: "./index.css",
-  output: "./public/index.css",
+  output: "./public/styles.css",
   callback: function(err, min) {}
 })
 
 minify({
   compressor: uglifyES,
-  input: "./assets/scripts/index.js",
-  output: "./public/index.js",
+  input: "./index.js",
+  output: "./public/scripts.js",
   callback: function(err, min) {}
 })
 

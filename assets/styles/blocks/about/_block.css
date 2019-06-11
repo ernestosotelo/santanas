@@ -1,0 +1,18 @@
+.about {
+  display: grid;
+  grid-template-rows: 1fr, repeat(2, 1fr);
+  grid-template-columns: repeat(12, 1fr);
+  background-color: rgba($darkGreen, 0.8);
+
+  &--background {
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    filter: blur(0.1rem);
+  }
+}
+
+picture {
+  grid-column: 1 / 13;
+  grid-row: 1 / 4;
+}

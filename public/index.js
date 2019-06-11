@@ -1,1 +1,0 @@
-import $ from"jquery";window.jQuery=$,window.$=$;import ToggleMobileNav from"./src/ToggleMobileNav";import ScrollEvents from"./src/ScrollEvents";import OpenOrClosed from"./src/OpenOrClosed";OpenOrClosed(),ToggleMobileNav($(".nav__bar__icon")),ToggleMobileNav($(".nav__link__mobile")),new ScrollEvents;
