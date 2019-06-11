@@ -1,0 +1,26 @@
+.menu__cards__category {
+  padding: 5rem;
+  display: flex;
+  grid-gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 10rem;
+  justify-content: center;
+  @mixin respond deviceSM {
+    padding: 0;
+    margin-top: 0;
+    justify-content: space-evenly;
+  }
+
+  &__header {
+    text-shadow: 1px 2px $mainLight;
+    width: 100%;
+    color: color($darkGreen lightness(30%));
+    font-size: 5rem;
+    border-bottom: 1rem solid color($darkGreen lightness(85%));
+    align-self: center;
+    margin: 4rem;
+    @mixin respond deviceSM {
+      margin: 10rem 2rem;
+    }
+  }
+}

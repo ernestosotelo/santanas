@@ -1,0 +1,7 @@
+.menu {
+  padding: 10rem 0 0 0;
+  background-color: $mainLight;
+
+  &__downloadBtn {
+  }
+}

@@ -1,0 +1,81 @@
+.nav__link {
+  font-size: 3rem;
+  text-align: center;
+  padding: 1rem;
+  @mixin respond deviceMD {
+    display: none;
+  }
+  &:hover {
+    transform: scale(1.05);
+    color: color($mainGreen lightness(70%));
+    transition: transform 200ms, color 200ms;
+  }
+}
+
+.nav__sublink {
+  display: none;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  top: 5.2rem;
+  justify-content: space-evenly;
+  &__item {
+    margin: 0;
+    width: 100%;
+    border: outset 0.1rem color($mainRed lightness(20%));
+    font-size: 1.7rem;
+    text-decoration: none;
+    padding: 1rem;
+    background-color: color($mainRed lightness(20%));
+    color: $mainLight;
+    text-align: center;
+
+    &:hover {
+      transform: scale(1.05);
+      background-color: color($mainRed lightness(30%));
+      transition: transform 200ms, background-color 200ms;
+    }
+
+    &:active {
+      border-style: inset;
+      background-color: color($mainRed lightness(25%));
+    }
+  }
+  @mixin respond deviceMD {
+    display: none;
+  }
+}
+
+.nav__link__mobile {
+  @mixin respond deviceMD {
+    font-size: 4rem;
+    padding: 3rem;
+    align-self: center;
+
+    color: $mainLight;
+    text-decoration: none;
+    display: block;
+  }
+}
+
+.nav__sublink__mobile {
+  @mixin respond deviceMD {
+    list-style: none;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  &__item {
+    @mixin respond deviceMD {
+      display: block;
+      padding: 1.5rem;
+      background-color: color($mainRed blackness(60%));
+      width: 40rem;
+      margin: 1rem auto;
+      color: $mainLight;
+      border: outset 0.2rem $mainDark;
+      font-size: 3rem;
+      text-decoration: none;
+    }
+  }
+}

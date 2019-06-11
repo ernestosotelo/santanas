@@ -1,0 +1,26 @@
+.contact__form__button {
+  grid-column: 1/3;
+  margin: 0 auto;
+  font-family: $mainFont;
+  font-weight: bold;
+  font-size: 3rem;
+  background-color: color($mainRed lightness(30%));
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 15rem;
+  display: block;
+  cursor: pointer;
+  color: $mainLight;
+  border: 0.1rem ouset $mainLight;
+  box-shadow: 0px 0px 5px 0px #302d2d;
+
+  &:hover {
+    transform: scale(1.05);
+    background-color: color($mainRed lightness(35%));
+    transition: 0.2s ease-in;
+  }
+
+  &:active {
+    border-style: inset;
+  }
+}

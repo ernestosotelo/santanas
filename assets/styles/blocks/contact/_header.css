@@ -1,0 +1,3 @@
+.contact__header {
+  color: color($mainRed lightness(40%));
+}

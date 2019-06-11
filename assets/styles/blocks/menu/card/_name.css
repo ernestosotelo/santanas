@@ -1,0 +1,13 @@
+.menu__card__name {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+
+  @mixin respond deviceLG {
+    font-size: 2.7rem;
+  }
+
+  @mixin respond deviceMD {
+    font-size: 4rem;
+  }
+}

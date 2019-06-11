@@ -1,0 +1,26 @@
+.menu__downloadBtn {
+  padding: 2rem 4rem;
+  background-color: color($mainGreen lightness(10%));
+  color: $mainGreen;
+  margin: 0 auto;
+  display: block;
+  font-size: 3rem;
+  border: 0.3rem outset $mainGreen;
+  border-radius: 1rem;
+
+  &:hover {
+    background-color: color($mainGreen lightness(15%));
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: transform 200ms;
+  }
+
+  &:active {
+    border-style: inset;
+  }
+
+  @mixin respond deviceMD {
+    font-size: 2.4rem;
+    margin-top: 2rem;
+  }
+}
