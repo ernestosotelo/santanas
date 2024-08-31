@@ -47,7 +47,7 @@
     "postcss-mixins": "6.2.0",
     "postcss-nested": "2.1.2",
     "postcss-simple-vars": "4.1.0",
-    "webpack": "^4.33.0",
+    "webpack": "^5.94.0",
     "webpack-bundle-analyzer": "^3.3.2",
     "webpack-cli": "^3.3.3",
     "webpack-dev-server": "^3.7.1"
